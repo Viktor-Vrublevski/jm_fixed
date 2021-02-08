@@ -1,0 +1,29 @@
+.content {
+    background-color:#eff0f1;
+
+}
+
+.content-head {
+    background-image: url(../images/askQuestion/background.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.button {
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: #9fa6ad;
+    background-color: transparent;
+    padding: 10px;
+    margin: 4px 0px;
+    width: 390px;
+}
+
+.facebook {
+    background-color:#395697;
+    color: #ffffff;
+}
+
+.iconFacebook {
+    background-color:#ffffff;
+}

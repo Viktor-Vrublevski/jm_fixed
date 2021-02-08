@@ -1,0 +1,31 @@
+tag:
+
+  - id: 1
+    name: "java"
+    description: "Java is a popular high-level programming language."
+    persist_date: "2020-01-20"
+
+  - id: 2
+    name: "javaScript"
+    description: "For questions regarding programming in ECMAScript (JavaScript/JS) and its various dialects/implementations (excluding ActionScript)."
+    persist_date: "2020-01-18"
+
+  - id: 3
+    name: "html"
+    description: "HTML (HyperText Markup Language) is the markup language for creating web pages and other information to be displayed in a web browser."
+    persist_date: "2020-01-17"
+
+  - id: 4
+    name: "bootstrap-4"
+    description: "Bootstrap 4 is the fourth major version of the popular front-end component library. The Bootstrap framework aids in the creation of responsive, mobile-first websites and web apps."
+    persist_date: "2020-01-16"
+
+  - id: 5
+    name: "sql"
+    description: "Structured Query Language (SQL) is a language for querying databases."
+    persist_date: "2020-01-19"
+
+  - id: 6
+    name: "sql22"
+    description: "aaStructured Query Language (SQL) is a language for querying databases."
+    persist_date: "2020-01-02"

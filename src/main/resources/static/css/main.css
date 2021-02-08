@@ -1,0 +1,33 @@
+#h4Tag{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #0c0d0e;
+}
+
+#mainCountTag{
+    margin-top: 50px
+}
+
+#mainCountTag th{
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    padding-left: 0px
+}
+
+#mainCountTag td{
+    border-top-width: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 5px;
+    padding-left: 0px
+
+}
+#mainCountTag .mb-1{
+    font-size: 12px;
+}
+
+#spanX {
+    font-size: 11px;
+    color: #6a737c;
+}

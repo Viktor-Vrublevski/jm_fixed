@@ -1,0 +1,13 @@
+user_entity:
+  - email: "principal@mail.ru"
+    reputation_count: 2
+    password: "$2a$10$G.l/LUSaCNeNK3d5Bhm2KOJLF8aFynLFxiKirvrcJHwveXmcAXQcy"
+    about: "description 1"
+    full_name: "Test"
+    is_enabled: 1
+    is_deleted: 1
+    last_redaction_date: "2020-05-28 13:58:56"
+    persist_date: "2020-05-28 13:58:56"
+    image_link: "https://www.google.com/search?q=D0"
+    role_id: 1
+    id: 153  # <-- User Principal

@@ -1,0 +1,27 @@
+question_has_tag:
+  - question_id: 10
+    tag_id: 1
+
+  - question_id: 13
+    tag_id: 1
+
+  - question_id: 14
+    tag_id: 1
+
+  - question_id: 15
+    tag_id: 2
+
+  - question_id: 16
+    tag_id: 3
+
+  - question_id: 17
+    tag_id: 2
+
+  - question_id: 18
+    tag_id: 5
+
+  - question_id: 19
+    tag_id: 5
+
+  - question_id: 20
+    tag_id: 5

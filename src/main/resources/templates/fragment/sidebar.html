@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+
+<div th:fragment="sidebar">
+    <!--    <div  class="col-md-3 col-xl-2  col-lg-2 col-sm-3" id="sidebar">   закоментил, вместо этой поставил след стр-->
+    <div id="sidebar">
+        <div class="nav-col btn-group-vertical  btn-block mr-0   ">
+            <a class="nav-link-menu" href="/site"><button type="button" class="btn  btn-sm  tablinks" id="mainPageLink"  onclick="openContent(id, 'mainPage')">
+                Главная</button></a>
+            <a class="nav-link-menu" href="/questionAria"><button type="button" class="btn btn-sm tablinks" id="areaQuestionLink" onclick="openContent(id, 'areaQuestion'),
+             new PaginationQuestion(1, 10).setQuestions()">Вопросы</button></a>
+            <a class="nav-link-menu" href="/tagsAria"><button type="button" class="btn  btn-sm tablinks" id="areaTagLink" onclick="openContent(id, 'areaTag'),
+            new PaginationTag(1, 12, 'popular').writeTags()">Метки</button></a>
+            <a class="nav-link-menu" href="/users"><button type="button" class="btn  btn-sm tablinks" id="areaUsersLink" onclick="openContent(id, 'areaUsers'), new PaginationUser(1,20,'week').writeUsers()">
+                Участники</button></a>
+            <a class="nav-link-menu" href="/unansweredAria"><button type="button" class="btn  btn-sm tablinks" id="areaUnansweredLink" onclick="openContent(id, 'areaUnanswered')">Неотвеченные</button></a>
+            <a class="nav-link-menu" href="/question/questionId"><button type="button" class="btn  btn-sm tablinks" id="questionLink" onclick="openContent(id, 'question')"><i>МАКЕТ СТРАНИЦЫ ВОПРОСА</i></button></a>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

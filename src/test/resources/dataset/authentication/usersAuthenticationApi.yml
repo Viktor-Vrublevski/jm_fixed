@@ -1,0 +1,38 @@
+user_entity:
+
+  - email: "Test1@mail.ru"
+    reputation_count: 2
+    password: "$2a$10$uLg5d6.WEJMLjeFsvlYcAeC6qT62hzNC/jPOYuf0BqnyuyPpGlNWm"
+    about: "description 1"
+    full_name: "Teat"
+    is_enabled: 1
+    last_redaction_date: "2020-05-28 13:58:56"
+    persist_date: "2020-05-28 13:58:56"
+    role_id: 1
+    id: 1
+
+  - email: "Test2@mail.ru"
+    reputation_count: 1
+    password: "Test2@mail.ru"
+    about: "description 2"
+    full_name: "Tot"
+    is_enabled: 1
+    last_redaction_date: "2020-05-28 13:58:56"
+    persist_date: "2020-05-28 13:58:56"
+    role_id: 1
+    id: 2
+
+  - email: "Test3@mail.ru"
+    reputation_count: 0
+    password: "Test3@mail.ru"
+    about: "description 2"
+    full_name: "Tot"
+    is_enabled: 1
+    last_redaction_date: "2020-05-28 13:58:56"
+    persist_date: "2020-05-28 13:58:56"
+    role_id: 1
+    id: 3
+
+
+
+

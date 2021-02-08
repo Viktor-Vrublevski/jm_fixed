@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="users" class="snippet-hidden align-self-start" id="usersArea">
+    <div>
+        <div class="row m-2">
+            <h2 class="m-3">Участники</h2>
+        </div>
+        <div class="form-group row justify-content-between m-2">
+
+            <div class="col-2">
+                <input  class="form-control" id="inputPassword2" placeholder="Фильтр по участникам">
+            </div>
+
+
+            <div class="col-5  btn-group justify-content-end"  id="differentUsersBar">
+                <button type="button" href="#" class="btn btn-sm active">Репутация</button>
+                <button type="button" href="#" class="btn btn-sm">Новые участники</button>
+                <button type="button" href="#" class="btn btn-sm">Голосующие</button>
+                <button type="button" href="#" class="btn btn-sm">Редакторы</button>
+                <button type="button" href="#" class="btn btn-sm">Модераторы</button>
+            </div>
+        </div>
+
+        <ul class="nav justify-content-end m-3">
+            <li class="nav-item">
+                <a class="nav-link active" href="#" onclick="new PaginationUser(1, 20, 'week').writeUsers()">За неделю</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="new PaginationUser(1, 20, 'month').writeUsers()">За месяц</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Квартал</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Год</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Все</a>
+            </li>
+        </ul>
+
+        <div class="row m-3" id="usersTable" style="min-height:350px"></div>
+
+        <a href="#" class="m-3">Зал славы за неделю/месяц/квартал</a>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end m-3" id="usersPageNavigation">
+            </ul>
+        </nav>
+    </div>
+</div>
+</body>
+</html>
+

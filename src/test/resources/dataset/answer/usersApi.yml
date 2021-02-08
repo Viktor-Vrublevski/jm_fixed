@@ -1,0 +1,45 @@
+user_entity:
+  - email: "principal@mail.ru"
+    reputation_count: 2
+    password: "2020-04-04"
+    about: "description 1"
+    full_name: "Teat"
+    is_enabled: 1
+    last_redaction_date: "2020-05-28 13:58:56"
+    persist_date: "2020-05-28 13:58:56"
+    role_id: 1
+    id: 1
+
+  - email: "2020-04-04"
+    reputation_count: 1
+    password: "2020-04-04"
+    about: "description 2"
+    full_name: "Tot"
+    is_enabled: 1
+    last_redaction_date: "2020-05-28 13:58:56"
+    persist_date: "2020-05-28 13:58:56"
+    role_id: 1
+    id: 2
+
+  - email: "2020-04-04"
+    reputation_count: 0
+    password: "2020-04-04"
+    about: "description 2"
+    full_name: "Tot"
+    is_enabled: 1
+    last_redaction_date: "2020-05-28 13:58:56"
+    persist_date: "2020-05-28 13:58:56"
+    role_id: 1
+    id: 3
+
+  # Attention! Do not change this block(-id:4).
+  - email: "admin@tut.by"
+    reputation_count: 10
+    password: "admin"
+    about: "description 2"
+    full_name: "Admin Admin"
+    is_enabled: 1
+    last_redaction_date: "2021-02-24 22:44:3"
+    persist_date: "2020-05-28 13:58:56"
+    role_id: 2
+    id: 4

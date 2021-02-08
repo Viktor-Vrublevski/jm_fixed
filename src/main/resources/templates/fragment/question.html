@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:fragment="question" class="snippet-hidden align-self-start" id="question-single">
+    <div class="col m-2 p-4" style="border-left: 1px solid #D6D9DC;" >
+        <div header class="row justify-content-between" >
+            <div class = "col">
+                <h2>Парсинг сайта myip.ms</h2>
+            </div>
+            <div class = "col">
+                <a type="button" class="btn btn-primary float-right" href="/ask"  id="askQuest">Задать вопрос</a>
+            </div>
+
+        </div>
+
+        <div underheader class="row">
+            <div class="col">
+                <p>
+                    <span style="color: #6a737c">Вопрос задан:</span> сегодня&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span style="color: #6a737c">Последняя активность:</span> сегодня&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span style="color: #6a737c">Просмотрен:</span> 24 раза
+                </p>
+            </div>
+        </div>
+        <hr/>
+
+        <div main-area class="row">
+            <div question-and-answers class="col-md-12 col-xl-9  col-lg-9 col-sm-12" aria-label="question and answers">
+                <div question >
+                    <div class="row">
+                        <div vote-area-question class="col-1">
+                            <svg width="36" height="36" >
+                                <path d="M2 26h32L18 10 2 26z"></path>
+                            </svg>
+                            <div style="font-size: 200%"> &nbsp;0</div>
+                            <svg  width="36" height="36" >
+                                <path d="M2 10h32L18 26 2 10z"></path>
+                            </svg>
+                        </div>
+                        <div question-and-comments-area class="col-11">
+                            <div question-area>
+                                <div describlion class="s-prose js-post-body" itemprop="text">
+
+                                    <p>Пишу парсер для сайта <a href="https://myip.ms/" rel="nofollow noreferrer">https://myip.ms/</a>
+                                        И вот для этой страницы <a href="https://myip.ms/browse/sites/1/ipID/23.227.38.0/ipIDii/23.227.38.255/own/376714" rel="nofollow noreferrer">https://myip.ms/browse/sites/1/ipID/23.227.38.0/ipIDii/23.227.38.255/own/376714</a>
+                                        С этой ссылкой всё работает отлично, но если перейти на другую страницу <a href="https://myip.ms/browse/sites/2/ipID/23.227.38.0/ipIDii/23.227.38.255/own/376714" rel="nofollow noreferrer">https://myip.ms/browse/sites/2/ipID/23.227.38.0/ipIDii/23.227.38.255/own/376714</a>
+                                        То никаких данных не выводит, хотя структура сайта такая же. Я думаю что это может быть связанно с тем что на сайте стоит лимит на просмотры, или из-за того что надо зарегистрироваться, но я не могу найти какой запрос надо отправить для входа в аккаунт.
+                                        Подскажите что сделать?</p>
+                                </div>
+                                <div class="tags">
+                                    <div class="mb-1">
+                                        python
+                                    </div>
+                                    <div class="mb-1">
+                                        python-3.x
+                                    </div>
+                                    <div class="mb-1">
+                                        парсер
+                                    </div>
+                                </div>
+                                <div underquestion class="mb0 ">
+                                    <div class="row justify-content-between px-3">
+                                        <div>
+                                            <a href="#">Поделиться</a>
+                                            <a href="#">Править</a>
+                                            <a href="#">Отслеживать</a>
+                                        </div>
+                                        <div>
+                                            <div class="card" style="width: 250px">
+                                                <div class="card-body p-2" style="background: #e0ebf3">
+                                                    <div>
+                                                        <span>Задан 3 часа назад</span>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <img width="48" height="48" src="https://pbs.twimg.com/profile_images/1182694005408186375/i5xT6juJ_400x400.jpg" alt="...">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <div>Коля Нарушев</div>
+                                                            <div><b>17</b>&nbsp;&nbsp;&nbsp;12</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div comments class="post-layout--right">
+                                <div id="comments-1237608" class="comments js-comments-container bt bc-black-075 mt12  dno" data-post-id="1237608" data-min-length="15">
+                                    <ul class="comments-list js-comments-list" data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+                                        <hr/>
+                                        <li>
+                                            <span>Что такое var_with_long_name ?</span>
+                                            –
+                                            <a href="#">Alpensin</a>
+                                            <span>1 час назад</span>
+                                        </li>
+                                        <hr/>
+                                        <li>
+                                            <span>Возможное имя переменной.</span>
+                                            –
+                                            <a href="#">Алексей</a>
+                                            <span>44 минуты назад</span>
+                                        </li>
+                                        <hr/>
+                                    </ul>
+                                </div>
+
+                                <div id="comments-link-1237608" data-rep="50" data-reg="true">
+                                    <a href="#">добавить комментарий</a>
+                                    <span >&nbsp;|&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div answers>
+                    <div info class="row justify-content-between m-2 py-5">
+                        <div style="font-size: 200%">
+                            2 Ответа
+                        </div>
+                        <div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-secondary">Текущие</button>
+                                <button type="button" class="btn btn-outline-secondary">По дате побликации</button>
+                                <button type="button" class="btn btn-outline-secondary active">Голоса</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div answer1 class="row">
+                        <div vote-area-answer class="col-1">
+                            <svg width="36" height="36" >
+                                <path d="M2 26h32L18 10 2 26z"></path>
+                            </svg>
+                            <div style="font-size: 200%"> &nbsp;3</div>
+                            <svg  width="36" height="36" >
+                                <path d="M2 10h32L18 26 2 10z"></path>
+                            </svg>
+                            <svg width="36" height="36">
+                                <path d="M6 14l8 8L30 6v8L14 30l-8-8v-8z"></path>
+                            </svg>
+                        </div>
+                        <div answer-and-comments-area class="col-11">
+                            <div answer-area>
+                                <p>Можно проще, без явного применения SQL запроса(если вы можете подключиться к базе):</p>
+                                в phpMyAdmin:
+                                <p>   нажать на ссылку "На главную"<p>
+                                <p>    затем выбрать "Учетные записи пользователя" а там уже</p>
+                                <p>   выбрать строку с необходимым пользователем и в столбце действия</p>
+                                <p>   выбрать "редактировать привилегии" в появившемся окне будет ссылка</p>
+                                <p>   "Изменить пароль" дальше интуитивно и так понятно</p>
+                                <p>   в HeidiSQL:</p>
+                                <p>   Инструменты</p>
+                                <p>   Управление пользователями</p>
+                                <p>   далее интуитивно понятно</p>
+                            </div>
+                            <div usderanswer class="mb0 ">
+                                <div class="row justify-content-between px-3">
+                                    <div>
+                                        <a href="#">Поделиться</a>
+                                        <a href="#">Править</a>
+                                        <a href="#">Отслеживать</a>
+                                    </div>
+                                    <div>
+                                        <div style="width: 250px">
+                                            <div>
+                                                <div>
+                                                    <span>Ответ дан: 6 часа назад</span>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <img width="48" height="48" src="https://pbs.twimg.com/profile_images/1182694005408186375/i5xT6juJ_400x400.jpg" alt="...">
+                                                    </div>
+                                                    <div class="col">
+                                                        <div>Вася Пупкин</div>
+                                                        <div><b>25</b>&nbsp;&nbsp;&nbsp;1</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div comments class="post-layout--right">
+                                <div>
+                                    <ul>
+                                        <hr/>
+                                        <li>
+                                            <span>Что такое var_with_long_name ?</span>
+                                            –
+                                            <a href="#">Alpensin</a>
+                                            <span>1 час назад</span>
+                                        </li>
+                                        <hr/>
+                                        <li>
+                                            <span>Возможное имя переменной.</span>
+                                            –
+                                            <a href="#">Алексей</a>
+                                            <span>44 минуты назад</span>
+                                        </li>
+                                        <hr/>
+                                    </ul>
+                                </div>
+                                <div id="comments-link-1237602" data-rep="50" data-reg="true">
+                                    <a href="#" >добавить комментарий</a>
+                                    <span>&nbsp;|&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div answer2 class="row">
+                        <div vote-area-answer class="col-1">
+                            <div class="js-voting-container grid jc-center fd-column ai-stretch gs4 fc-black-200" data-post-id="1237608" data-suppress-vote-requests="false">
+                                <svg width="36" height="36" >
+                                    <path d="M2 26h32L18 10 2 26z"></path>
+                                </svg>
+                                <div style="font-size: 200%"> &nbsp;1</div>
+                                <svg  width="36" height="36" >
+                                    <path d="M2 10h32L18 26 2 10z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div answer-and-comments-area class="col-11">
+                            <div answer-area>
+                                <p>Можно проще, без явного применения SQL запроса(если вы можете подключиться к базе):</p>
+                                в phpMyAdmin:
+
+                                <p>   нажать на ссылку "На главную"<p>
+                                <p>    затем выбрать "Учетные записи пользователя" а там уже</p>
+                                <p>   выбрать строку с необходимым пользователем и в столбце действия</p>
+                                <p>   выбрать "редактировать привилегии" в появившемся окне будет ссылка</p>
+                                <p>   "Изменить пароль" дальше интуитивно и так понятно</p>
+                                <p>   в HeidiSQL:</p>
+
+                                <p>   Инструменты</p>
+                                <p>   Управление пользователями</p>
+                                <p>   далее интуитивно понятно</p>
+
+                            </div>
+                            <div usderanswer class="mb0 ">
+                                <div class="row justify-content-between px-3">
+                                    <div>
+                                        <a href="#">Поделиться</a>
+                                        <a href="#">Править</a>
+                                        <a href="#">Отслеживать</a>
+
+                                    </div>
+                                    <div>
+                                        <div style="width: 250px">
+                                            <div>
+                                                <div>
+                                                    <span>Ответ дан: 6 часа назад</span>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3 ">
+                                                        <img width="48" height="48" src="https://pbs.twimg.com/profile_images/1182694005408186375/i5xT6juJ_400x400.jpg" alt="...">
+                                                    </div>
+                                                    <div class="col-8 ">
+                                                        <div>Толя Губкин</div>
+                                                        <div><b>100</b>&nbsp;&nbsp;&nbsp;1</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div comments class="post-layout--right">
+                                <div id="comments-1337601" class="comments js-comments-container bt bc-black-075 mt12  dno" data-post-id="1237608" data-min-length="15">
+                                    <ul class="comments-list js-comments-list" data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+                                        <hr/>
+                                        <li>
+                                            <span>Что такое var_with_long_name ?</span>
+                                            –
+                                            <a href="#">Alpensin</a>
+                                            <span>1 час назад</span>
+                                        </li>
+                                        <hr/>
+                                        <li>
+                                            <span>Возможное имя переменной.</span>
+                                            –
+                                            <a href="#">Алексей</a>
+                                            <span>44 минуты назад</span>
+                                        </li>
+                                        <hr/>
+                                    </ul>
+                                </div>
+
+                                <div id="comments-link-1337602" data-rep="50" data-reg="true">
+                                    <a class="js-add-link comments-link disabled-link" title="Используйте комментарии для запроса дополнительной информации или предложения улучшений. Избегайте публикации ответа на вопросы в комментариях." href="https://ru.stackoverflow.com/questions/1237608/%d0%9f%d0%b0%d1%80%d1%81%d0%b8%d0%bd%d0%b3-%d1%81%d0%b0%d0%b9%d1%82%d0%b0-myip-ms#" role="button">добавить комментарий</a>
+                                    <span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+                                    <a class="js-show-link comments-link dno" title="разверните, чтобы увидеть все комментарии к сообщению" href="https://ru.stackoverflow.com/questions/1237608/%d0%9f%d0%b0%d1%80%d1%81%d0%b8%d0%bd%d0%b3-%d1%81%d0%b0%d0%b9%d1%82%d0%b0-myip-ms#" onclick="" role="button"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                </div>
+                <div your-answer>
+                    <div class="card-body">
+                        <h6 class="card-title">Ваш ответ</h6>
+                        <div id="summernote"></div>
+                        <script>
+                            $('#summernote').summernote({
+                                tabsize: 2,
+                                height: 200
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div lest sidebar  class="row-md-4 col-xl-3  col-lg-3 col-sm-4" aria-label="боковая панель">
+                <div style="width: 350px">
+                    <div info-block class="card">
+                        <div class="card-footer" style="background: #faf1d3">
+                            Важное на мете
+                        </div>
+                        <div class="card-body" style="background: #fcf6e2">
+                            Opt-in alpha test for a new Stacks editor
+                            Visual design changes to the review queues
+                            Модерация за 2020 год в цифрах
+                        </div>
+                        <div class="card-footer" style="background: #faf1d3">
+                            Важное на мете
+                        </div>
+                        <div class="card-body" style="background: #fcf6e2">
+                            Opt-in alpha test for a new Stacks editor
+                            Visual design changes to the review queues
+                            Модерация за 2020 год в цифрах
+                        </div>
+                    </div>
+                    <div class="module sidebar-related">
+                        <h4>Похожие</h4>
+                        <div>
+                            <div class="py-3">
+                                <div class="btn btn-success">&nbsp; 1 &nbsp; </div>
+                                <a href="#">python парсинг сайта</a>
+                            </div>
+                            <div class="py-3">
+                                <div class="btn btn-success">&nbsp; 1 &nbsp;</div>
+                                <a href="#">Проверка на соответствие нескольким условиям</a>
+                            </div>
+                            <div class="py-3">
+                                <div class="btn btn-success ">&nbsp; 3 &nbsp;</div>
+                                <a href="#">PHP - Использование переменной в переменной (строке)</a>
+                            </div>
+                            <div class="py-3">
+                                <div class="btn btn-success">&nbsp; 1 &nbsp;</div>
+                                <a href="#">роверка строки на соответствие нескольким шаблонам</a>
+                            </div>
+                            <div class="py-3">
+                                <div class="btn btn-outline-success">&nbsp; 0 &nbsp;</div>
+                                <a href="#">Вызов переменной в Python</a>
+                            </div>
+                            <div class="py-3">
+                                <div class="btn btn-outline-success">&nbsp; 0 &nbsp;</div>
+                                <a href="#">Проверка на существование переменной python</a>
+                            </div>
+                            <div class="py-3">
+                                <div class="btn btn-success">&nbsp; 2 &nbsp;</div>
+                                <a href="#">Не работает проверка строки на соответствие</a>
+                            </div>
+                            <div class="py-3">
+                                <div class="btn btn-success">&nbsp; 1 &nbsp;</div>
+                                <a href="#">python Как получить имени переменной в виде строки?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div th:fragment="styleheader">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <!--// говорим системе что нужно считывать плотность пикселей устройства
+        // и при необходимости делать шрифт крупней-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <!--// Подключаем собственно стили  bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
+
+        <link rel="stylesheet" href="/static/css/sidebar.css">
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+            crossorigin="anonymous"></script>
+</div>
+
+
+
+</body>
+</html>

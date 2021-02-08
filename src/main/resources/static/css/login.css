@@ -1,0 +1,15 @@
+.auth-container {
+    background-color: #eeeeee;
+}
+.form-group, .reg-confirm {
+    padding-top: 7%;
+    padding-bottom: 15%;
+    max-width: 25%;
+    min-width: 25%;
+    margin: 0 auto;
+}
+.form-heading, .form-input,
+.form-button, .form-error {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}

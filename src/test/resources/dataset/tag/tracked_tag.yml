@@ -1,0 +1,27 @@
+user_entity:
+
+  - email: "Test1@mail.ru"
+    reputation_count: 2
+    password: "$2a$10$uLg5d6.WEJMLjeFsvlYcAeC6qT62hzNC/jPOYuf0BqnyuyPpGlNWm"
+    about: "description 1"
+    full_name: "Teat"
+    is_enabled: 1
+    last_redaction_date: "2020-05-28 13:58:56"
+    persist_date: "2020-05-28 13:58:56"
+    role_id: 1
+    id: 111
+
+tag:
+
+  - id: 111
+    description: "Tag Description 111"
+    name: "Tag Name111"
+    persist_date:
+
+
+tag_tracked:
+
+  - id: 111
+    persist_date:
+    tracked_tag_id: 111
+    user_id: 111

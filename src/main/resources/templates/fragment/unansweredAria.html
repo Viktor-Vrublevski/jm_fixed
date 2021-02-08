@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:fragment="unansweredAria" class="snippet-hidden align-self-start" id="unansweredAria">
+    <div class="unanswered-layout">
+        <div class="unanswered-header">
+        <div class="row m-2">
+            <div class="col-sm-4">
+                <h2 class="page-title">Неотвеченные вопросы</h2>
+            </div>
+
+            <div class="col-sm-2 d-flex align-items-end d-flex justify-content-end">
+                <a type="button" class="btn btn-primary float-right" href="/ask" id="askQuest">Задать вопрос</a>
+            </div>
+        </div>
+
+        <div class="info-block-page">
+            <div class="row">
+
+                <div class="col-sm-2">
+                    <div id="totalResultCountView">
+                    </div>
+                </div>
+
+                <div class="col-sm-4 d-flex align-items-center justify-content-end">
+                    <div class="menu-container">
+                        <div class="menu-element"><a class="menu-element-link menu-element-link__border active" href="#">С отслеживаемыми метками</a></div>
+                        <div class="menu-element"><a class="menu-element-link menu-element-link__border" href="#">Новые</a></div>
+                        <div class="menu-element"><a class="menu-element-link menu-element-link__border" href="#">Голоса</a></div>
+                        <div class="menu-element"><a class="menu-element-link menu-element-link__border" href="#">Без единого ответа</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 decoration-border"></div>
+            </div>
+        </div>
+    </div>
+        <div class="question-container">
+            <div class="row">
+                <div class="col-sm-6 questionWithoutAnswers">
+
+                </div>
+            </div>
+        </div>
+
+
+    <div class="row">
+
+        <div class="col-sm-3">
+            <div class="pagination-wrapper">
+                <nav>
+                    <ul class="pagination-element questionWithoutAnswerPagination">
+                        <li class=" page-item-element"><a class="page-element-link" href="#">Previous</a></li>
+                        <li class=" page-item-element active"><a class="page-element-link" href="#">1</a></li>
+                        <li class=" page-item-element"><a class="page-element-link" href="#">2</a></li>
+                        <li class=" page-item-element"><a class="page-element-link" href="#">3</a></li>
+                        <li class=" page-item-element"><a class="page-element-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+<!--        <div class="col-sm-3 d-flex justify-content-end">-->
+<!--            <div class="pagination-page-count">-->
+<!--                <nav>-->
+<!--                    <ul class="pagination-element">-->
+<!--                        <li class=" page-item-element active"><a class="page-element-link" href="#">10</a></li>-->
+<!--                        <li class=" page-item-element"><a class="page-element-link" href="#">30</a></li>-->
+<!--                        <li class=" page-item-element"><a class="page-element-link" href="#">50</a></li>-->
+<!--                        <li class=" page-item-element"><a class="page-element-link" href="#">75</a></li>-->
+<!--                        <li class=" page-item-element"><a class="page-element-link" href="#">100</a></li>-->
+<!--                    </ul>-->
+<!--                    <span class="page-number">на странице</span>-->
+<!--                </nav>-->
+<!--            </div>-->
+<!--        </div>-->
+
+    </div>
+
+    </div>
+    <div th:fragment="styleheader">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <!--// говорим системе что нужно считывать плотность пикселей устройства
+        // и при необходимости делать шрифт крупней-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <!--// Подключаем собственно стили  bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
+
+        <link rel="stylesheet" href="/static/css/sidebar.css">
+        <link rel="stylesheet" href="/static/css/unanswered.css">
+    </div>
+
+</div>
+
+</body>
+</html>

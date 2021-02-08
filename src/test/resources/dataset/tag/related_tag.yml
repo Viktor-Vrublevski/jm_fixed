@@ -1,0 +1,15 @@
+tag:
+
+  - id: 4
+    name: "mainTagId4"
+
+  - id: 5
+    name: "Child"
+
+related_tag:
+
+  - id: 3
+    child_tag: 5
+    main_tag: 4
+
+

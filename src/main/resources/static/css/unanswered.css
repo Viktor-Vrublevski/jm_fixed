@@ -1,0 +1,286 @@
+.description-unanswered-text,
+.menu-element,
+.unanswered-layout,
+.page-link {
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+
+.description-unanswered-text {
+    font-size: 18px;
+    line-height: 0;
+
+}
+
+.info-block-page {
+    padding-bottom: 0;
+    padding-top: 15px;
+}
+
+.menu-container{
+    border-radius: 3px;
+    border: 1px solid #848D95;
+    border-right: 0;
+    font-size: 0;
+}
+
+.menu-element{
+    display: inline-grid;
+    font-size: 13px;
+    line-height: 1.30769231;
+}
+
+.menu-element-link {
+    padding: 10px;
+    color: #6A737C;
+}
+
+.menu-element-link.active {
+    background-color: #E4E6E8;
+    color: #212529;
+}
+
+.col-rm-padding-right {
+    padding-right: 0;
+}
+
+.menu-element-link__border {
+    border-right: 1px solid #848D95;
+}
+
+.unanswered-header {
+    border-left: 1px solid #D6D9DC;
+    padding-left: 20px;
+}
+
+.inline-block {
+    display: inline-grid;
+}
+
+.decoration-border {
+    border-bottom: 1px solid #D6D9DC;
+    margin-left: -5px;
+    margin-top: 20px;
+}
+
+.question-card {
+    border-left: 1px solid #D6D9DC;
+    border-bottom: 1px solid #D6D9DC;
+    padding: 15px 0 20px 15px;
+}
+
+.vote {
+    width: 55px;
+}
+
+.answer-active {
+    color: #5EBA7D;
+    border: 1px solid #5EBA7D;
+    border-radius: 3px;
+}
+
+.view-count {
+    text-align: center;
+}
+
+.vote-count,
+.status-unanswered{
+    font-size: 20px;
+}
+
+.view-count-vote,
+.vote-count,
+.view-count-answer,
+.views{
+    text-align: center;
+    color: #6a737c;
+}
+
+.view-count-vote,
+.view-count,
+.views{
+    font-size: 11px;
+}
+
+.view-count-answer,
+.views {
+    margin-top: 18px;
+}
+
+.views-number {
+    padding-right: 1px;
+}
+
+.views-text {
+    padding-left: 1px;
+}
+
+.warm {
+    color: #a35200;
+}
+
+.answer-active {
+    border: 1px solid #5EBA7D;
+    border-radius: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #5EBA7D;
+}
+
+.vote-count strong,
+.status-unanswered strong {
+    font-weight: normal;
+}
+.question-container{
+    min-height: 1000px;
+}
+
+
+.question-details {
+    padding-left: 25px;
+}
+
+.question-title {
+    font-size: 16px;
+}
+
+.question-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 10px;
+}
+
+.item-between {
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    padding: .4em .5em;
+    font-size: 11px;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #e1ecf4;
+    border-radius: 3px;
+    color: #39739d  ;
+    background-color: #e1ecf4;
+}
+
+.tag:hover {
+    color: #2c5777  ;
+    background-color: #d1e5f1;
+    border-color: #d1e5f1;
+}
+
+.user-info {
+    width: 170px;
+    margin-left: 20px;
+}
+
+.user-info-details-wrapper {
+    margin-top: -7px;
+    margin-left: 7px;
+}
+
+.user-info-details-name,
+.user-info-stats,
+.user-info-change-link{
+    font-size: 12px;
+}
+
+.user-info-change-link {
+    color: #9199a1;
+    text-decoration: none;
+}
+
+.user-info-stats {
+    font-weight: bold;
+    color: #848d95;
+}
+
+.user-gold,
+.user-silver,
+.user-bronze {
+    margin-left: 13px;
+    display: none;
+}
+
+.active-stats {
+    display: initial;
+}
+
+.user-gold::before,
+.user-silver::before,
+.user-bronze::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-left: -9px;
+    margin-top: 6px;
+}
+
+.user-gold::before {
+    background-color: #FFCC00;
+}
+
+.user-silver::before {
+    background-color: #C5C5C5;
+}
+
+.user-bronze::before {
+    background-color: #CC9966;
+}
+
+.pagination-wrapper,
+.pagination-page-count {
+    padding-top: 50px;
+}
+
+.pagination-wrapper {
+    border-left: 1px solid #D6D9DC;
+    padding-left: 15px;
+}
+
+.pagination-element {
+    padding-inline-start: 0;
+}
+
+.pagination-element a {
+    color: #3C4146;
+}
+
+.pagination-element {
+    display: inline-block;
+}
+
+.page-item-element {
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #D6D9DC;
+    padding: 3px 9px 3px 9px;
+}
+
+.page-item-element.active {
+    background-color: #F48024;
+    border: none;
+}
+
+.page-item-element.active a {
+    color: white;
+}
+
+.page-number {
+    font-size: 13px;
+}
+
+.pagination-page-count {
+    padding-right: 25px;
+}

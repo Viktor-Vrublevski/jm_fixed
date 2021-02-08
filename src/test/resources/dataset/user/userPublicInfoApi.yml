@@ -1,0 +1,51 @@
+user_entity:
+  - id: 153  # <-- User Principal
+    email: "principal@mail.ru"
+    reputation_count: 2
+    password: "$2a$10$G.l/LUSaCNeNK3d5Bhm2KOJLF8aFynLFxiKirvrcJHwveXmcAXQcy"
+    is_enabled: 1
+    last_redaction_date: "2020-05-28 13:58:56"
+    persist_date: "2020-05-28 13:58:56"
+    role_id: 1
+    nickname: "before_update"
+    about: "Something about"
+    image_link:
+    link_site:
+    link_vk:
+    link_github:
+    full_name:
+    city:
+
+  - id: 10
+    email: "ivanov@mail.com1"
+    reputation_count: 2
+    password: "$2a$10$61FOrJLsPSU.8QMpBfPObux5mI8RhiwL5kLbNNdplBaRr18cLlyQO"
+    is_enabled: 1
+    last_redaction_date: "2020-05-28 13:58:56"
+    persist_date: "2020-05-28 13:58:56"
+    role_id: 1
+    nickname: "before_update"
+    about: "Something about"
+    image_link:
+    link_site:
+    link_vk:
+    link_github:
+    full_name:
+    city:
+
+  - id: 42
+    email: "notprincipal@mail.ru"
+    reputation_count: 2
+    password: "$2a$10$G.l/LUSaCNeNK3d5Bhm2KOJLF8aFynLFxiKirvrcJHwveXmcAXQcx"
+    is_enabled: 1
+    last_redaction_date: "2020-05-28 13:58:00"
+    persist_date: "2020-05-28 13:58:00"
+    role_id: 1
+    nickname: "wrong_user"
+    about: "Something about wrong user"
+    image_link: "wrong image"
+    link_site: "wrong site"
+    link_vk: "wrong vk"
+    link_github: "wrong git"
+    full_name: "wrong fullname"
+    city: "wrong city"
